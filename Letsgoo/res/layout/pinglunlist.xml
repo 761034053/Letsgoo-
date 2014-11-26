@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+    
+    <TextView
+            android:id="@+id/pinglun_blank1"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+          />
+    <com.loopj.android.image.SmartImageView 
+            android:id="@+id/pinglun_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/pinglun_blank1"
+            />
+
+        <TextView
+            android:id="@+id/pinglun_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pinglun_image"
+            android:layout_toRightOf="@id/pinglun_image"
+            android:layout_marginLeft="10dp"
+            android:text="曾经年少的我"
+            android:textColor="#a08fc3"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/pinglun_time"
+            style="@style/mystyles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/pinglun_image"
+            android:layout_alignLeft="@id/pinglun_name"
+            android:text="10分钟前"
+            android:textColor="#BEB4AA"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/pinglun_huifu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pinglun_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/pinglun_huifu"
+             />
+        
+        <TextView
+            android:id="@+id/pinglun_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我到时候一起来，嘿嘿"
+            android:textColor="#646c78"
+            android:textSize="16sp"
+            android:layout_alignLeft="@id/pinglun_image"
+            android:layout_below="@id/pinglun_image"
+            />
+        
+        <RelativeLayout
+            android:id="@+id/pinglun_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#efefef"
+            android:layout_alignLeft="@id/pinglun_content"
+            android:layout_below="@id/pinglun_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            
+            <com.loopj.android.image.SmartImageView
+            android:id="@+id/pinglun_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+            
+            <TextView 
+            android:id="@+id/pinglun_content1"   
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜爬岳麓山活动"
+            android:textColor="#646c78"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/pinglun_image1"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pinglun_blank2"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/pinglun_layout"
+          />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="#efefef"
+            android:layout_below="@id/pinglun_blank2"
+          />
+</RelativeLayout>

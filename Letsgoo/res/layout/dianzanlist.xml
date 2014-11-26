@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff" >
+    
+    <TextView
+            android:id="@+id/dianzan_blank1"
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+           />
+        <com.loopj.android.image.SmartImageView 
+            android:id="@+id/dianzan_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/dianzan_blank1"
+            />
+
+        <TextView
+            android:id="@+id/dianzan_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/dianzan_image"
+            android:layout_toRightOf="@id/dianzan_image"
+            android:layout_marginLeft="10dp"
+            android:text="曾经年少的我"
+            android:textColor="#a08fc3"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/dianzan_time"
+            style="@style/mystyles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dianzan_image"
+            android:layout_alignLeft="@id/dianzan_name"
+            android:text="10分钟前"
+            android:textColor="#BEB4AA"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dianzan_content"
+            style="@style/mystyles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/dianzan_name"
+            android:layout_alignBottom="@id/dianzan_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dianzan_name"
+            android:text="赞了你"
+            android:textColor="#646c78"
+            android:textSize="16sp" 
+            />
+
+        <RelativeLayout
+            android:id="@+id/dianzan_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#efefef"
+            android:layout_alignLeft="@id/dianzan_image"
+            android:layout_below="@id/dianzan_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+            
+            <com.loopj.android.image.SmartImageView
+            android:id="@+id/dianzan_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+            
+            <TextView 
+            android:id="@+id/dianzan_content1"   
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夜爬岳麓山活动"
+            android:textColor="#646c78"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dianzan_image1"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/dianzan_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/dianzan_layout"
+            android:layout_below="@id/dianzan_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="hellon,喜洋洋，昵称等19人觉得很赞"
+            android:textColor="#a08fc3"
+            android:textSize="12sp"
+            />
+        
+        <ImageView 
+            android:id="@+id/dianzan_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_jiantou"
+            android:layout_alignTop="@id/dianzan_content2"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/dianzan_blank2"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/dianzan_content2"/>
+        <TextView
+            android:background="#efefef"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/dianzan_blank2"/>
+</RelativeLayout>

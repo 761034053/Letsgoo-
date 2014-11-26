@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="83dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        >
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/visitor_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView 
+            android:id="@+id/visitor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="曾经年少的我" 
+            android:textColor="#a08fc3"
+            android:textSize="12sp"
+            android:layout_toRightOf="@id/visitor_image"
+            android:layout_alignTop="@id/visitor_image"  
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/visitor_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/visitor_name"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:text="查看了什么活动。。。。"
+            android:textColor="#646c78"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/visitor_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/visitor_image"
+            android:layout_alignLeft="@+id/visitor_content"
+            android:text="10分钟前"
+            android:textColor="#BEB4AA"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <TextView 
+    android:background="#efefef"
+    android:layout_width="fill_parent"
+    android:layout_height="3dp"
+    />
+</LinearLayout>

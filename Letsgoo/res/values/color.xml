@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="black">#000000</color>
+    <color name="labelColor">#0B273D</color>
+    <color name="labelColorChoose">#f44930</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="checkimagecolor">#9E9E9E</color>
+    <color name="selectcolor">#DFDFDF</color>
+    
+    <color name="phonepost_image">#00A57D</color>
+    <color name="phonepost_afterimage">#646c78</color>
+</resources>
